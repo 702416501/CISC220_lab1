@@ -8,10 +8,10 @@
 #include <iostream>
 using namespace std;
 
-void func1(){
+void func2(){
 	cout<<"**************************"<<endl;
 }//p2
-bool func2(int x){
+bool func3(int x){
 	int i=2;
 	if (x<=1){
 		return false;
@@ -30,7 +30,7 @@ bool func2(int x){
 
 }//p3
 
-void func3(){
+void func4(){
 	int total=0;
 	for (int i=1;i<=300;i++){
 		total+=i;
@@ -40,7 +40,7 @@ void func3(){
 	}
 }//p4
 
-int func4(){
+int func5(){
 	int i=1;
 	int sum=0;
 	while (sum<=100000){
@@ -49,16 +49,20 @@ int func4(){
 	}
 	return i;
 }//p5
-
+void func6(int x){
+	for (int i=1;i<x;i++){
+		if ()
+	}
+}
 
 int main(){
 	cout<<"Hello, World!!"<<endl;//p1
-	func1();//p1
-	cout<<func2(17)<<endl; cout<<func2(-4)<<endl; cout<<func2(260)<<endl;
-	func1();//p1
-	func3();//p4
-	func1();//p1
-	cout<<func4()<<endl;//p5
+	func2();//p2
+	cout<<func3(17)<<endl; cout<<func3(-4)<<endl; cout<<func3(260)<<endl;
+	func2();//p2
+	func4();//p4
+	func2();//p2
+	cout<<func5()<<endl;//p5
 
 
 }//main
