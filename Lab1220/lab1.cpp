@@ -8,6 +8,32 @@
 #include <iostream>
 using namespace std;
 
+void func2();//p2
+bool func3(int x);//p3
+void func4();//p4
+int func5();//p5
+void func6(int x);//p6
+void func7();//p7
+int func8();//p8
+void func9();//p9
+
+
+int main(){
+	cout<<"Hello, World!!"<<endl; func2();//p1 and p2
+	cout<<func3(17)<<endl; cout<<func3(-2)<<endl; cout<<func3(260)<<endl; func2();//test cases for p3 and p2
+	func4(); func2();//p4 and p2
+	cout<<func5()<<endl; func2();//p5 and p2
+	func6(2); func6(3); func6(4); func2();//test cases for p6 and p2
+	func7(); func2();//p7 and p2
+	cout<<func8()<<endl; func2();//p8 and p2
+	func9(); func2();//p9 and p2
+
+}//main function
+
+
+
+
+
 void func2(){
 	cout<<"**************************"<<endl;
 }//p2
@@ -15,19 +41,18 @@ bool func3(int x){
 	int i=2;
 	if (x<=1){
 		return false;
-	}
-	while (i<=x){
-		if (x%i==0){
-			if (x==i){
-				return true;
-			}else {
-				return false;
+	}else{
+		while (i<=x){
+			if (x%i==0){
+				if (x==i){
+					return true;
+				}else {
+					return false;
+				}
 			}
-		}else {
 			i++;
 		}
-	}
-
+	 }
 }//p3
 
 void func4(){
@@ -74,22 +99,18 @@ int func8(){
 		lcount++;
 	}
 	return lcount;
-}
-int main(){
-	cout<<"Hello, World!!"<<endl;//p1
-	func2();//p2
-	cout<<func3(17)<<endl; cout<<func3(-4)<<endl; cout<<func3(260)<<endl;
-	func2();//p2
-	func4();//p4
-	func2();//p2
-	cout<<func5()<<endl;//p5
-	func2();//p2
-	func6(2);//p6; Need two more test cases
-	func2();//p2
-	func7();//p7
-	func2();//p2
-	cout<<func8()<<endl;
-}//main function
+}//p8
 
+void func9(){
+	for (int y=2017; y<2417; y++){
+		if ((y%4==0) && (y%100!=0)){
+			cout<<y<<endl;
+		}else if ((y%100==0) && (y%400==0)){
+			cout<<y<<endl;
+		}else if (y%400==0){
+			cout<<y<<endl;
+		}
+	}
+}//p9
 
 
