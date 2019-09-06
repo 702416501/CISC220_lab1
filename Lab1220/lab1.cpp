@@ -17,6 +17,10 @@ void func7();//p7
 int func8();//p8
 void func9();//p9
 void func10(int x);//p10
+void func11(int x, int y);//p11
+
+
+
 
 
 int main(){
@@ -28,7 +32,8 @@ int main(){
 	func7(); func2();//p7 and p2
 	cout<<func8()<<endl; func2();//p8 and p2
 	func9(); func2();//p9 and p2
-	func10(5); func10(4); func10(2); func2();//p10
+	func10(5); func10(4); func10(2); func2();//p10 and p2
+	func11(3,10); func11(217,220); func11(12,14);func2();//p11 and p2
 
 }//main function
 
@@ -144,3 +149,17 @@ void func10(int x){
 	}
 }
 
+void func11(int x, int y){
+	for(int i=x+1; i<y; i++) {
+		int a=i;
+		cout<<a<<endl;
+		while (a>1){
+			if (a%2==0){
+				a/=2;
+			} else{
+				a= (a*3)+1;
+			}
+		}
+		cout<<"Collatz Conjecture is still working"<<endl;
+	}
+}//p11
